@@ -55,11 +55,12 @@ export const SectionHome = styled.section`
       margin-bottom: 2rem;
       margin-top: 2rem;
     }
+
     p {
       font-size: 1.2rem;
       font-weight: 500;
       color: #767676;
-      font-family: Mulish,sans-serif;
+      font-family: Mulish, sans-serif;
       line-height: 1.6;
 
       @media (max-width: 900px) {
@@ -92,9 +93,10 @@ export const SectionHome = styled.section`
       }
     }
   }
-  .hero-img{
+
+  .hero-img {
     animation: morph 8s ease-in-out infinite;
-    background-image: url(../../public/hero.png);
+    background-image: url(/Portfolio/hero.png);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -104,7 +106,7 @@ export const SectionHome = styled.section`
     position: relative;
     transition: all 1s ease-in-out;
     width: 24rem;
-    @media(max-width: 900px){
+    @media (max-width: 900px) {
       height: 15rem;
       width: 16rem;
     }
@@ -126,7 +128,8 @@ export const SectionHome = styled.section`
       }
     }
   }
-  .skills{
+
+  .skills {
     margin-top: 60px;
     display: flex;
     position: relative;
@@ -135,37 +138,41 @@ export const SectionHome = styled.section`
     color: #767676;
     font-size: 1.7rem;
     left: 0;
-    @media(max-width: 900px){
+    @media (max-width: 900px) {
       flex-direction: column;
     }
-    p{
-      border-right: 2px solid rgba(45,46,50,.5);
+
+    p {
+      border-right: 2px solid rgba(45, 46, 50, .5);
       color: #2d2e32;
-      font-family: Mulish,sans-serif;
+      font-family: Mulish, sans-serif;
       font-weight: 600;
       margin-right: 7rem;
       padding-right: 2rem;
-      @media(max-width: 900px){
+      @media (max-width: 900px) {
         margin-right: 0;
       }
     }
-    ul{
+
+    ul {
       display: flex;
       flex-wrap: wrap;
       gap: 2.5rem;
       list-style: none;
-      li{
+
+      li {
         margin-top: 20px;
         align-items: center;
         background-color: #fff;
         border-radius: 50%;
-        box-shadow: 0 0 10px rgba(0,0,0,.09);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .09);
         cursor: pointer;
         display: flex;
         height: 4rem;
         justify-content: center;
         width: 4rem;
-        img{
+
+        img {
           height: auto;
           width: 2.4rem;
         }
