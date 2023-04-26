@@ -20,7 +20,7 @@ const Projects = () => {
                    O site fornece uma interface para pesquisar, comparar e reservar barcos.`}
                    stacks={['React', ' css', 'JavaScript']} transition={'15s'} scrollY={'-86%'} />
           <Project link={'https://github.com/jonathanhnr/shareme'} logo={shareme} title={'Shareme'}
-                   text={`Um site para você compartilhar com outros usuário seus dispositivos. Conta com um layout responsivo
+                   text={`Um site para você compartilhar com outros usuários seus dispositivos. Conta com um layout responsivo
                    e funcional, com barra de pesquisa e side bar
                    `}
                    stacks={['React', ' css', 'JavaScript',"postgres"]} scrollY={'-56%'} transition={'5s'} />
