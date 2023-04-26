@@ -30,7 +30,7 @@ export const SectionContact = styled.section`
   .contact-icons {
     display: flex;
     flex-wrap: wrap;
-    gap: 8rem;
+    gap: 20px;
     margin-top: 40px;
     @media (max-width: 750px) {
       flex-direction: column;
