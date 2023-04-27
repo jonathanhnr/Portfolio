@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
+import { useIsSmallViewport } from '../../hooks/useScreenSize.jsx';
 
 const Project = ({ logo, title, text,stacks,link ,scrollY,transition,live}) => {
   const [scroll, setScroll] = useState(false)
+  const isSmallViewport = useIsSmallViewport(600)
+
   return (
     <div className={'pro pro__1'}>
       <div className={'pro__img'}>
         <a href={link}>
           <img src={logo} alt=''
                style={{
-
-                 transform: scroll ? `translateY(${scrollY})` : "translateY(0%)",
+                 transform: scroll && !isSmallViewport ? `translateY(${scrollY})` : "translateY(0%)",
                  transition: `transform ${transition} ease-in-out`,
                }}
                onMouseEnter={() => setScroll(true)}

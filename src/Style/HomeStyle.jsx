@@ -128,11 +128,7 @@ export const SectionHome = styled.section`
       }
     }
   }
-  .logos{
-    @media(max-width: 750px){
-      padding: 10px 50px;
-    }
-  }
+
 
   .skills {
     margin-top: 60px;
@@ -164,9 +160,12 @@ export const SectionHome = styled.section`
       flex-wrap: wrap;
       gap: 2.5rem;
       list-style: none;
+      @media (max-width: 750px) {
+        gap: 2px;
+      }
 
       li {
-        margin-top: 20px;
+        margin-top: 60px;
         align-items: center;
         background-color: #fff;
         border-radius: 50%;
@@ -184,5 +183,5 @@ export const SectionHome = styled.section`
       }
     }
   }
-  
+
 `
