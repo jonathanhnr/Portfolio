@@ -101,7 +101,7 @@ export const SectionHome = styled.section`
     background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid #2d2e32;
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    border-radius: 60% 40% 30% 70% / 10% 30% 70% 40%;
     height: 18rem;
     position: relative;
     transition: all 1s ease-in-out;
@@ -110,8 +110,8 @@ export const SectionHome = styled.section`
       height: 15rem;
       width: 16rem;
     }
-    animation: morph 8s ease-in-out infinite;
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: morph 4s ease-in-out infinite;
+    border-radius: 100% 100% 100% 100% / 100% 100% 80% 40%;
     position: relative;
     transition: all 1s ease-in-out;
     @keyframes morph {
@@ -126,6 +126,11 @@ export const SectionHome = styled.section`
       100% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
       }
+    }
+  }
+  .logos{
+    @media(max-width: 750px){
+      padding: 10px 50px;
     }
   }
 
@@ -179,4 +184,5 @@ export const SectionHome = styled.section`
       }
     }
   }
+  
 `

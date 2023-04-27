@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Project = ({ logo, title, text,stacks,link ,scrollY,transition}) => {
+const Project = ({ logo, title, text,stacks,link ,scrollY,transition,live}) => {
   const [scroll, setScroll] = useState(false)
   return (
     <div className={'pro pro__1'}>
@@ -29,6 +29,12 @@ const Project = ({ logo, title, text,stacks,link ,scrollY,transition}) => {
             <i className={'fa-brands fa-github'}></i>
             code
           </a>
+          {live &&(
+            <a href={live}>
+              <i className={"fa-solid fa-arrow-up-right-from-square link-icon"}></i>
+              Live Demo
+            </a>
+          )}
         </div>
       </div>
     </div>);

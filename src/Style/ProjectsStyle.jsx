@@ -143,14 +143,14 @@ export const SectionProjects = styled.section`
       text-decoration: none;
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 7px;
 
       i {
         font-size: 2.2rem;
       }
 
       .link-icon {
-        font-size: 2rem !important;
+        font-size: 15px !important;
       }
 
       img {
