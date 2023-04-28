@@ -19,7 +19,7 @@ export const SectionAbout = styled.section`
     span {
       position: absolute;
       background-color: white;
-      bottom: -60px;
+      bottom: -55px;
       right: -30px;
       border-radius: 50%;
 
@@ -29,18 +29,26 @@ export const SectionAbout = styled.section`
       }
 
       @media (max-width: 880px) {
-        bottom: 21px;
-        right: -8px;
+        bottom: 2px;
+        right: 47px;
+      } 
+      @media (max-width: 750px) {
+        bottom: 30px;
+        right: 55px;
+      }
+      @media(max-width: 500px){
+        right: 55px;
       }
 
    
 
       img {
+        right: 100px;
         width: 150px;
         animation: rotate 9s linear infinite;
 
         @media (max-width: 750px) {
-          width: 100px;
+          width: 80px;
         }
 
         @keyframes rotate {
@@ -94,7 +102,7 @@ export const SectionAbout = styled.section`
 
     @media (max-width: 750px) {
       width: 30px;
-      right: 28px;
+      right: 81px;
     }
   }
 
