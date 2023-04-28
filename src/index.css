@@ -4,7 +4,16 @@
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
 }
-body{
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+body {
+    background-color: rgb(249, 249, 249);
+
+}
+#root{
+
     overflow-x: hidden;
 }
 .container {
