@@ -29,20 +29,18 @@ export const SectionAbout = styled.section`
       }
 
       @media (max-width: 880px) {
-        bottom: -3px;
-        right: 45px;
+        bottom: 21px;
+        right: -8px;
       }
 
-      @media (max-width: 750px) {
-        display: none;
-      }
+   
 
       img {
         width: 150px;
         animation: rotate 9s linear infinite;
 
-        @media (max-width: 1020px) {
-          width: 150px;
+        @media (max-width: 750px) {
+          width: 100px;
         }
 
         @keyframes rotate {
@@ -80,7 +78,7 @@ export const SectionAbout = styled.section`
   .work-emoji {
     position: absolute;
     z-index: 10;
-    width: 3rem;
+    width: 50px;
     bottom: 8px;
     right: 22px;
 
@@ -95,7 +93,8 @@ export const SectionAbout = styled.section`
     }
 
     @media (max-width: 750px) {
-      display: none;
+      width: 30px;
+      right: 28px;
     }
   }
 

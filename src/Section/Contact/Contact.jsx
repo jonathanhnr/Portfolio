@@ -15,7 +15,7 @@ const Contact = () => {
               <span> <i className={'fa-solid fa-map-location-dot'}></i></span>
               <div className={'contact-info'}>
                 <h3>location</h3>
-                <p className={'location'}>Siqueira Campos,PR</p>
+                <p className={'location'}>Siqueira Campos, PR</p>
               </div>
             </div>
             <div className={'contact-icons-box'}>
