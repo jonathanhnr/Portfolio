@@ -29,7 +29,7 @@ const About = () => {
             <h3>Um desenvolvedor front-end dedicado
               com sede em tecnologia
             </h3>
-            <p>Como desenvolvedor front-end júnior, possuo um impressionante arsenal de habilidades em HTML,
+            <p>Como desenvolvedor front-end, possuo um impressionante arsenal de habilidades em HTML,
               CSS, JavaScript, React, Tailwind. Sou excelente em projetar e manter sites
               responsivos que oferecem uma experiência de usuário tranquila. Minha experiência reside na
               criação de interfaces dinâmicas e envolventes por meio da escrita de código limpo e
