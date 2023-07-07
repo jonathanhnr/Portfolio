@@ -10,7 +10,7 @@ import TailWind from "../../../public/tailwind.79614a5f61617ba49a0891494521226b.
 const Home = () => {
     return (
         <SectionHome data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" id={"home"}>
-            <div  className={"container"}>
+            <div className={"container"}>
                 <div className={"content"}>
                     <div className={"hero-main"}>
                         <div className={"hero-text"}>

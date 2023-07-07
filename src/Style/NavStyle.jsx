@@ -12,7 +12,7 @@ export const Navbar = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 200;
+  z-index: 300;
 
   h3 {
     color: #2d2e32;
@@ -58,7 +58,7 @@ export const Navbar = styled.div`
     position: absolute;
     bottom: 22px;
     overflow: hidden;
-    @media(max-width: 850px){
+    @media(max-width: 800px){
       right: 70px;
     }
   }
@@ -82,13 +82,15 @@ export const MobileNav = styled.div`
   background-color: #fff;
   display: flex;
   justify-content: center;
-  left: 0;
+  left: 199px;
   position: fixed;
   text-align: center;
-  top: 0;
+  top: 60px;
   transition: all .3s ease-in-out;
-  width: 100%;
-  z-index: 300;
+  width: 46%;
+  z-index: 302;
+  border-radius: 20px;
+  padding: 50px;
 
   span {
     font-size: 2rem;
@@ -96,7 +98,7 @@ export const MobileNav = styled.div`
     top: 2rem;
     right: 4rem;
     cursor: pointer;
-    
+
 
     &:hover {
       color: #3098ff;
@@ -108,7 +110,7 @@ export const MobileNav = styled.div`
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    font-size: 2.3rem;
+    font-size: 1.3rem;
     list-style: none;
 
     a {
@@ -122,11 +124,13 @@ export const MobileNav = styled.div`
       }
     }
   }
-  &.close-menu{
-    left: -100%
+
+  &.close-menu {
+    left: 100%
   }
+
   &.open-menu {
-    left: 0 
+    left: 0
   }
 `
 
