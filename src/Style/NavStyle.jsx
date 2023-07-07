@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Navbar = styled.div`
   align-items: center;
-  background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, .09);
   display: flex;
   font-size: 1.2rem;
@@ -26,13 +25,14 @@ export const Navbar = styled.div`
     list-style: none;
 
     a {
-      color: black;
+      color: #767676;
       font-weight: 600;
       text-decoration: none;
       transition: all .23s;
       @media (max-width: 900px) {
         display: none;
       }
+
       &:hover {
         color: #3098ff;
         transition: all 0.3s;
@@ -48,12 +48,39 @@ export const Navbar = styled.div`
       }
     }
   }
+
+  .theme {
+    right: 50px;
+    border-radius: 50%;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 22px;
+    overflow: hidden;
+    @media(max-width: 850px){
+      right: 70px;
+    }
+  }
+
+  .theme-container {
+    bottom: -45px;
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    right: -45px;
+  }
+
+  .img-theme {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-180deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    background-color: black;
+  }
 `
 export const MobileNav = styled.div`
   align-items: center;
   background-color: #fff;
   display: flex;
-  height: 100vh;
   justify-content: center;
   left: 0;
   position: fixed;

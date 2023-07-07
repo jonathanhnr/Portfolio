@@ -21,8 +21,12 @@ body {
     max-width: 107rem;
     padding: 0 4rem;
 }
+
 @media(max-width: 750px){
     .container{
         padding: 0 20px;
     }
+}
+.section{
+    background-color: black;
 }

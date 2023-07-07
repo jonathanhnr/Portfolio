@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const SectionProjects = styled.section`
-  background-color: #f8f7f7;
   padding: 10rem 0;
 
   p {
@@ -14,7 +13,7 @@ export const SectionProjects = styled.section`
 
   h3 {
     font-size: 25px;
-    color: black;
+    color: #767676;
     margin-bottom: 6rem;
   }
 

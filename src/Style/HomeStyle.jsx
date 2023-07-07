@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const SectionHome = styled.section`
-  background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   height: auto;
