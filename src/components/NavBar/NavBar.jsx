@@ -18,13 +18,13 @@ const NavBar = ({ theme, themeToggle }) => {
               <a href={"#home"}>Home</a>
             </li>
             <li>
-              <a href={"#about"}>about</a>
+              <a href={"#about"}>Sobre</a>
             </li>
             <li>
-              <a href="#projects">projects</a>
+              <a href="#projects">Projetos</a>
             </li>
             <li>
-              <a href="#contact">contact</a>
+              <a href="#contact">Contato</a>
             </li>
           </ul>
         </div>
@@ -38,25 +38,25 @@ const NavBar = ({ theme, themeToggle }) => {
               <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about">Sobre</a>
             </li>
             <li>
-              <a href="#projects">projects</a>
+              <a href="#projects">Projetos</a>
             </li>
             <li>
-              <a href="#contact">contact</a>
+              <a href="#contact">Contato</a>
             </li>
             <li>
               <div className={'theme'}>
-                <div
+                <button
                   className={'theme-container'}
                   onClick={() => themeToggle(theme)}
                   id="#projects"
                 >
                   {
-                    <img className={theme === "light" ? "img-theme" : ""} src={lua} alt="lua" />
+                    <img className={theme === "light" ? "img-theme" : ""} src={lua} alt="lua/sol" />
                   }
-                </div>
+                </button>
               </div>
             </li>
             <li onClick={openNav}>
