@@ -7,8 +7,8 @@ export const Navbar = styled.div`
   font-size: 1.2rem;
   height: auto;
   justify-content: space-between;
-  left: 0;
-  padding: 25px 40px 25px 50px;
+  right: 0;
+  padding: 25px 20px 25px 30px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -58,7 +58,7 @@ export const Navbar = styled.div`
     position: absolute;
     bottom: 22px;
     overflow: hidden;
-    @media(max-width: 800px){
+    @media(max-width: 824px){
       right: 70px;
     }
   }
@@ -69,6 +69,7 @@ export const Navbar = styled.div`
     width: 300%;
     height: 300%;
     right: -45px;
+    border-radius: 50px;
   }
 
   .img-theme {
@@ -79,18 +80,36 @@ export const Navbar = styled.div`
 `
 export const MobileNav = styled.div`
   align-items: center;
-  background-color: #fff;
   display: flex;
   justify-content: center;
-  left: 199px;
+  right: 2%;
   position: fixed;
   text-align: center;
   top: 60px;
   transition: all .3s ease-in-out;
-  width: 46%;
   z-index: 302;
-  border-radius: 20px;
-  padding: 50px;
+
+
+  .dark {
+    background-color: #131212;
+    padding: 20px;
+    border-radius: 20px;
+
+
+    a {
+      color: #7e7d7d;
+    }
+  }
+
+  .light {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+
+    a {
+      color: black;
+    }
+  }
 
   span {
     font-size: 2rem;
@@ -109,12 +128,11 @@ export const MobileNav = styled.div`
   ul {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
     font-size: 1.3rem;
     list-style: none;
 
     a {
-      color: black;
       text-decoration: none;
       font-weight: 500;
 
@@ -126,11 +144,11 @@ export const MobileNav = styled.div`
   }
 
   &.close-menu {
-    left: 100%
+    right: -40%
   }
 
   &.open-menu {
-    left: 0
+    right: 20px
   }
 `
 

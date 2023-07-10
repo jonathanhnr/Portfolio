@@ -11,8 +11,8 @@ const NavBar = ({ theme, themeToggle }) => {
   return (
     <>
       <MobileNav onClick={() => setNav(!nav)} className={`${nav ? 'open-nav ' : 'close-menu'}`}>
+        <div className={theme === "dark" ? "dark" : "light"}>
 
-        <div>
           <ul onClick={openNav}>
             <li>
               <a href={"#home"}>Home</a>
