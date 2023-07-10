@@ -51,7 +51,7 @@ export const Navbar = styled.div`
 
   .theme {
     right: 30px;
-    border-radius: 50%;
+    border-radius: 50px;
     background-color: white;
     width: 30px;
     height: 30px;

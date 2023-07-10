@@ -21,10 +21,10 @@ const NavBar = ({ theme, themeToggle }) => {
               <a href={"#about"}>about</a>
             </li>
             <li>
-              <a href="#contact">contact</a>
+              <a href="#projects">projects</a>
             </li>
             <li>
-              <a href="#projects">projects</a>
+              <a href="#contact">contact</a>
             </li>
           </ul>
         </div>
