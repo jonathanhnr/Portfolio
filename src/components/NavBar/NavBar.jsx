@@ -53,11 +53,9 @@ const NavBar = ({ theme, themeToggle }) => {
                   onClick={() => themeToggle(theme)}
                   id="#projects"
                 >
-                  {theme === 'light' ? (
-                    <img className={'img-theme'} src={lua} alt="lua" />
-                  ) : (
-                    <img src={lua} alt="lua" />
-                  )}
+                  {
+                    <img className={theme === "light" ? "img-theme" : ""} src={lua} alt="lua" />
+                  }
                 </div>
               </div>
             </li>
