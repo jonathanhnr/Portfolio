@@ -51,8 +51,8 @@ export const Navbar = styled.div`
 
   .theme {
     right: 30px;
-    border-radius: 50px;
     background-color: white;
+    border-radius: 50%;
     width: 30px;
     height: 30px;
     position: absolute;
@@ -69,7 +69,6 @@ export const Navbar = styled.div`
     width: 300%;
     height: 300%;
     right: -45px;
-    border-radius: 50px;
   }
 
   .img-theme {
