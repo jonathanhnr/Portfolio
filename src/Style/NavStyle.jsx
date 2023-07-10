@@ -50,7 +50,7 @@ export const Navbar = styled.div`
   }
 
   .theme {
-    right: 50px;
+    right: 30px;
     border-radius: 50%;
     background-color: white;
     width: 30px;
@@ -58,7 +58,7 @@ export const Navbar = styled.div`
     position: absolute;
     bottom: 22px;
     overflow: hidden;
-    @media(max-width: 824px){
+    @media(max-width: 829px){
       right: 70px;
     }
   }
