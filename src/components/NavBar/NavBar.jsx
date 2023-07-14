@@ -1,31 +1,28 @@
 import React, { useState } from 'react';
 import { MobileNav, Navbar } from '../../Style/NavStyle.jsx';
 import lua from '../../../public/Portfolio/dark.svg';
+import NavItem from './NavItem.jsx';
 
 const NavBar = ({ theme, themeToggle }) => {
   const [nav, setNav] = useState(false);
 
-  const openNav = () => {
-    setNav(!nav);
-  };
+  const themeImg = theme === 'light' ? 'img-theme' : '';
+
+  const navNames = ['Home', 'Sobre', 'Projetos', 'Contato'];
+  const toggleNav = () => setNav(prevNav => !prevNav);
+  const toggleTheme = () => themeToggle(theme);
+
   return (
     <>
-      <MobileNav onClick={() => setNav(!nav)} className={`${nav ? 'open-nav ' : 'close-menu'}`}>
-        <div className={theme === "dark" ? "dark" : "light"}>
-
-          <ul onClick={openNav}>
-            <li>
-              <a href={"#home"}>Home</a>
-            </li>
-            <li>
-              <a href={"#about"}>Sobre</a>
-            </li>
-            <li>
-              <a href="#projects">Projetos</a>
-            </li>
-            <li>
-              <a href="#contact">Contato</a>
-            </li>
+      <MobileNav
+        onClick={toggleNav}
+        className={`${nav ? 'open-nav ' : 'close-menu'}`}
+      >
+        <div className={theme === 'dark' ? 'dark' : 'light'}>
+          <ul onClick={toggleNav}>
+            {navNames.map(name => (
+              <NavItem key={name} name={name} />
+            ))}
           </ul>
         </div>
       </MobileNav>
@@ -34,32 +31,21 @@ const NavBar = ({ theme, themeToggle }) => {
         <Navbar className={`${nav ? 'open-nav' : ''}`}>
           <h3>Jonathan.dev</h3>
           <ul>
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#about">Sobre</a>
-            </li>
-            <li>
-              <a href="#projects">Projetos</a>
-            </li>
-            <li>
-              <a href="#contact">Contato</a>
-            </li>
+            {navNames.map(name => (
+              <NavItem key={name} name={name} />
+            ))}
             <li>
               <div className={'theme'}>
                 <button
                   className={'theme-container'}
-                  onClick={() => themeToggle(theme)}
+                  onClick={toggleTheme}
                   id="#projects"
                 >
-                  {
-                    <img className={theme === "light" ? "img-theme" : ""} src={lua} alt="lua/sol" />
-                  }
+                  {<img className={themeImg} src={lua} alt="lua/sol" />}
                 </button>
               </div>
             </li>
-            <li onClick={openNav}>
+            <li onClick={toggleNav}>
               <i className="fa-solid fa-bars"></i>
             </li>
           </ul>

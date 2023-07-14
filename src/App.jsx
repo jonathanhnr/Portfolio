@@ -19,21 +19,21 @@ import { darkTheme, lightTheme } from './theme.js';
 
 function useTheme() {
   const getTheme = () => {
-   return JSON.parse(localStorage.getItem("theme")) || "light"
-  }
-  const [theme , setTheme] = useState(() => getTheme())
+    return JSON.parse(localStorage.getItem('theme')) || 'light';
+  };
+  const [theme, setTheme] = useState(() => getTheme());
   const themeToggle = theme => {
     theme === 'light' ? setTheme('dark') : setTheme('light');
   };
   useEffect(() => {
-    localStorage.setItem("theme", JSON.stringify(theme));
+    localStorage.setItem('theme', JSON.stringify(theme));
   }, [theme]);
 
-  return [theme, themeToggle]
+  return [theme, themeToggle];
 }
 
 function App() {
-  const [theme, themeToggle] = useTheme()
+  const [theme, themeToggle] = useTheme();
 
   return (
     <>

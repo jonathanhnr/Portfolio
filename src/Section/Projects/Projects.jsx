@@ -4,12 +4,47 @@ import Project from './Project.jsx';
 import rentalboat from '../../../public/screenshot.png';
 import shareme from '../../../public/shareme.png';
 import reactGran from '../../../public/reactGram.png';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+const projectsData = [
+  {
+    link: 'https://github.com/jonathanhnr/Rental-boat',
+    logo: rentalboat,
+    title: 'Rental-Boat',
+    text: '...',
+    stacks: ['React', 'css', 'JavaScript'],
+    transition: '15s',
+    scrollY: '-86%',
+    live: 'https://jonathanhnr.github.io/Rental-boat/',
+  },
+  {
+    link: 'https://github.com/jonathanhnr/shareme',
+    logo: shareme,
+    title: 'Shereme',
+    text: `Um site para você compartilhar com outros
+     usuários seus dispositivos. Conta com um layout
+      responsivo e funcional, com barra de pesquisa 
+      e side bar`,
+    stacks: ['React', 'css', 'JavaScript'],
+    transition: '15s',
+    scrollY: '-86%',
+    live: 'https://jonathanhnr.github.io/Rental-boat/',
+  },
+  {
+    link: 'https://github.com/jonathanhnr/Rental-boat',
+    logo: rentalboat,
+    title: 'Rental-Boat',
+    text: '...',
+    stacks: ['React', 'css', 'JavaScript','mongoDB', 'express'],
+    transition: '15s',
+    scrollY: '-86%',
+    live: 'https://jonathanhnr.github.io/Rental-boat/',
+  },
+];
 
 const Projects = () => {
   return (
-    <SectionProjects id={'projects'}>
+    <SectionProjects id={'projetos'}>
       <div className={'container'}>
         <div className={'project-content'}>
           <div data-aos="fade-right">
