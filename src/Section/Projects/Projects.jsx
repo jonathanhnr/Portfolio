@@ -6,41 +6,6 @@ import shareme from '../../../public/shareme.png';
 import reactGran from '../../../public/reactGram.png';
 import 'aos/dist/aos.css';
 
-const projectsData = [
-  {
-    link: 'https://github.com/jonathanhnr/Rental-boat',
-    logo: rentalboat,
-    title: 'Rental-Boat',
-    text: '...',
-    stacks: ['React', 'css', 'JavaScript'],
-    transition: '15s',
-    scrollY: '-86%',
-    live: 'https://jonathanhnr.github.io/Rental-boat/',
-  },
-  {
-    link: 'https://github.com/jonathanhnr/shareme',
-    logo: shareme,
-    title: 'Shereme',
-    text: `Um site para você compartilhar com outros
-     usuários seus dispositivos. Conta com um layout
-      responsivo e funcional, com barra de pesquisa 
-      e side bar`,
-    stacks: ['React', 'css', 'JavaScript'],
-    transition: '15s',
-    scrollY: '-86%',
-    live: 'https://jonathanhnr.github.io/Rental-boat/',
-  },
-  {
-    link: 'https://github.com/jonathanhnr/Rental-boat',
-    logo: rentalboat,
-    title: 'Rental-Boat',
-    text: '...',
-    stacks: ['React', 'css', 'JavaScript','mongoDB', 'express'],
-    transition: '15s',
-    scrollY: '-86%',
-    live: 'https://jonathanhnr.github.io/Rental-boat/',
-  },
-];
 
 const Projects = () => {
   return (
